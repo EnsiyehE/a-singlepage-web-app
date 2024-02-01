@@ -30,6 +30,7 @@ Primary:  #e67e22
 
 ---Tints: lighter version
 #fdf2e9;
+#fae5d3;
 
 ---shades:: darker version
 
@@ -180,4 +181,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }
