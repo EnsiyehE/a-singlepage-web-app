@@ -38,6 +38,8 @@ Primary:  #e67e22
 
 ---Grays: #555 , #333
 
+ #6f6f6f: lighest gray allowed on this one:#fdf2e9;
+
 5--- Shadows
 
 6--- border radius
@@ -90,7 +92,20 @@ body {
   row-gap: 9.6rem;
   /* exact same thing as writing 1fr 1fr */
   grid-template-columns: repeat(2, 1fr);
+
+  /* margin-bottom: 9.6rem; */
 }
+
+/* do not want vertically this margin bottem everywhere */
+/* when the grid is the last child */
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 /* if we want another section has 3 cloumns instead of the 2 , we can export the style from the grid class and make another class */
 
 .grid--2--cols {
@@ -99,6 +114,10 @@ body {
 
 .grid--3--cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid--center-v {
@@ -151,7 +170,8 @@ body {
   font-weight: 600;
 
   /* put the transition on original "state" */
-  transition: background-color 0.3s;
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -179,8 +199,55 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  /* remove the text decoration and do it in this way */
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  /* in order to remove the effect of the border when the mouse hover on the link , this is the usual style */
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+/* Helper classes */
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottem-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
 
 strong {
