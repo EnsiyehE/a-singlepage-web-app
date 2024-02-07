@@ -452,3 +452,195 @@
   margin-top: 4.8rem;
   text-align: center;
 }
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* *************************************************** */
+/* Section Call To Action*/
+/* *************************************************** */
+
+.section-cta {
+  /* top /right /bottom/left */
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("/img/eating.jpg");
+  /* whatever the size of this element the background image is always covered it entirely */
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  /* which would have them occupied the entire width of the parent */
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  /* it should inherit from the parent element */
+  font-family: inherit;
+  color: inherit;
+  /* remove the default border inside the element box */
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* we can select and style elements which do not exist really in the page */
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+/* to helps the user where they are on the page , show the focus which we can see it by hitting the tab */
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+/* *************************************************** */
+/* Section Footer*/
+/* *************************************************** */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 12.8rem 0;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contacts p:first-child {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  /* lightest gray allowed on white */
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
