@@ -11,6 +11,10 @@
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+
+  /* for the navigation in mobile responsive design */
+
+  position: relative;
 }
 
 .logo {
@@ -26,7 +30,7 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -57,6 +61,25 @@
   background-color: #cf711f;
 }
 
+/* Mobile */
+
+.btn-mobile-nav {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* *************************************************** */
 /* Hero Section */
 
@@ -65,6 +88,20 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
 }
+
+/* add media query , changing some background color
+@media (max-width: 1200px) {
+  .section-hero {
+    background-color: orangered;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero {
+    border: 20px dashed blue;
+    background-color: blue;
+  }
+} */
 
 .hero {
   max-width: 130rem; /* we want max-width not to create the scroll bar */
@@ -490,6 +527,7 @@
 
 .cta {
   display: grid;
+  /* 2/3=66.6% + 1/3 =33.3% */
   grid-template-columns: 2fr 1fr;
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);

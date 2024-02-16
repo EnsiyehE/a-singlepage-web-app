@@ -15,6 +15,7 @@ Default:1
 Small:1.05
 medium:1.2
 Paragraph default:1.6
+large:1.8
 
 --letter spacing
 --0.5px
@@ -72,6 +73,10 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* to hide everything inside the x axis */
+  /* only works when there is nth absoultely positioned in relation to body */
+  overflow-x: hidden;
 }
 /* *************************************************** */
 /* General components or Reusable  */
@@ -251,6 +256,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
